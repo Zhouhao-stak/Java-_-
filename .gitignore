@@ -1,38 +1,24 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# 忽略 Marscode 相关文件（包含套接字文件）
+.marscode/
+*.sock
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# 忽略 JDK 相关文件夹
+.jdks/
+
+# 忽略 IDE 配置文件（IntelliJ IDEA/Eclipse）
+.idea/
 *.iml
 *.ipr
-
-### Eclipse ###
-.apt_generated
+*.iws
+.settings/
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# 忽略 Java 编译产物
+target/
+classes/
+*.class
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
+# 忽略系统文件
+.DS_Store  # Mac系统文件，Windows可保留（不影响）
+Thumbs.db   # Windows系统缩略图文件
